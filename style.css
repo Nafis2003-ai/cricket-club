@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria, sans-serif;
+}
+.navbar{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    justify-content: center;
+    background-color: black;
+    padding: 1rem;
+    /* margin-bottom: 2rem; */
+    align-items: center;
+    
+}
+.navbar a{
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+.subnav{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    justify-content: center;
+    
+    padding: 1rem;
+    /* margin-bottom: 2rem; */
+    align-items: center;
+}
+
+.subnav a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('image/banner3.png');
+    background-color: #505050;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: aliceblue;
+   font-size: 2rem;
+   
+}
+
+
+.batsman{
+    display: none;
+}
+.bowler{
+    display:none;
+}
+.login{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login input,button{
+    width: 60%;
+}
+
+.login form {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Input Fields */
+.login label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #fff; /* White color for label */
+}
+
+.login input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #222; /* Dark background for inputs */
+    color: #fff; /* Light text color for input fields */
+    transition: border-color 0.3s ease;
+}
+
+.login input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #ff6f00; /* Orange border on focus */
+    outline: none;
+}
+
+/* Submit Button */
+
+.login button {
+    background-color: #ff6f00; /* Orange button */
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+ button:hover {
+    background-color: #e65c00; /* Darker orange on hover */
+    color: white;
+}
+.backbtn{
+    width: 15% !important;
+    margin-top: 1rem;
+}
+.backbtn a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* match statistics page */
+.statistics{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+   width: 50%;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   padding: 2rem;
+   background-color: #ccc !important;
+}
+.names{
+    flex-basis: 30%;
+}
+.stats{
+    flex-basis:70%;
+    
+}
+.mstats{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.background{
+    background-color:#efbc9a ;
+}
+.logbody{
+    background-color: #ccc;
+}
+.tab{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.tabl{
+    text-align: center;
+    color: #fff;
+}
+.tabl td,th{
+    background-color: #a8a8a8b3;
+    padding: 1.5rem;
+    border-bottom:1rem;
+}
+.tabl tr{
+    border: .4rem;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+}
